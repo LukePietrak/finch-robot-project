@@ -1,0 +1,14 @@
+follow_instructions:
+    :param finch_to_move: the finch object
+    :param instructions: data that represents the instructions to tell the finch how to move
+    :post: the finch follows the instructions (moves as guided)
+
+reverse_instructions:
+    :param instructions: data that represents the instructions to tell the finch how to move
+    :return: instructions that lead a finch the opposite way, i.e., if you follow instructions
+        then follow reverse_instructions, you'll be back in your original position and orientation
+
+prompt_for_custom_instructions:
+    asks the user to use the keyboard to enter instructions one at a time until they decide to stop.
+    Validates each and prompts user to fix when they have errors
+    :return: a valid list of instructions (even if it is empty)
